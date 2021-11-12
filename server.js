@@ -8,7 +8,7 @@ app.get("/new",(req,res)=>{
     res.send("<h3>Hellow new route is working</h3>")
 })
 
-app.listen(5000,()=>{
+app.listen(process.env.PORT||5000,()=>{
     console.log('server is started');
 })
 module.exports=app
